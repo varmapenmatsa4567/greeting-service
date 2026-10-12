@@ -11,7 +11,7 @@ public class GreetingController {
     
     @GetMapping("/hello")
     public Map<String, String> hello() {
-        return Map.of("message", "Hello From Greeting Service");
+        return Map.of("message", "Hello from Greeting Service!");
     }
     
 }
