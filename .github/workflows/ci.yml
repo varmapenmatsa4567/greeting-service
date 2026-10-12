@@ -36,7 +36,7 @@ jobs:
         run: docker build -t ${{ env.ECR_REPOSITORY }}:${{ github.sha }} .
 
       - name: Debug GitHub OIDC claims
-        uses: actions-oidc-debugger@v1
+        uses: github/actions-oidc-debugger@v1
 
       - name: Configure AWS credentials
         if: github.event_name == 'push'
